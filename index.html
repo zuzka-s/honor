@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=News+Cycle:700|Vesper+Libre&display=swap" rel="stylesheet">
+    <title>Vyhrajte nový Honor 9X Pro | MALL.TV</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="head-stripe">
+        <div class="container">
+            <div class="text">Soutěž vám přináší</div><a href="https://mall.tv"><img src="images/malltv.svg"
+                    alt="Mall.tv"></a>
+        </div>
+    </div>
+    <div id="header" class="section">
+        <div class="container">
+            <h1>Vyhrajte nový Honor 9X Pro</h1>
+            <img class="logo" alt="Tady Vary" src="images/logo.gif">
+        </div>
+    </div>
+
+    <div id="win-section" class="section">
+        <div class="container">
+            <h2>VYHRAJTE NOVÝ HONOR 9X PRO</h2>
+            <div class="em-cont">
+
+                <div class="embed">
+
+                    <iframe scrolling="no" src="https://www.mall.tv/embed/honor-9x-pro"
+                        frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="price-section" class="section">
+        <div class="container">
+            <h2>O CO HRAJEME?</h2>
+
+        </div>
+    </div>
+    <div id="howto-section" class="section">
+        <div class="container">
+            <h2>JAK HRÁT?</h2>
+
+        </div>
+    </div>
+    <div id="clue-section" class="section">
+        <div class="container">
+            <h2>VIDEA S NÁPOVĚDOU</h2>
+
+        </div>
+    </div>
+    <div id="partners" class="section partners">
+        <div class="container">
+            <h2>Partneři</h2>
+
+
+            <div class="row mb-5 text-center">
+                <div class="col-12 col-md-6 flex-loga">
+                    <h3>Mediální partner projektu</h3>
+                    <div class="logo-box velke"><img class="lozad malltv"
+                            src="http://tadyvary.mall.tv/images/partneri/mall_tv.png" alt="MALL.TV"></div>
+                </div>
+                <div class="col-12 col-md-6 flex-loga">
+                    <h3>Mediální partner projektu</h3>
+                    <div class="logo-box velke"><img class="lozad malltv"
+                            src="http://tadyvary.mall.tv/images/partneri/mall_tv.png" alt="MALL.TV"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="malltv-promo" class="section malltvapp">
+        <div class="container">
+            <div class="mtvapp100">
+                <h2 class="h2-app">Sledujte MALL.TV na všech zařízeních</h2>
+            </div>
+            <div class="mtvapp1">
+                <div class="applinksbox">
+                    <p>Vaše oblíbené pořady MALL.TV, můžete sledovat pohodlně v mobilu, ve své Smart TV
+                        nebo na
+                        XBOXU! Stačí si jen vybrat.</p>
+                    <a target="_blank" href="https://apps.apple.com/cz/app/mall-tv/id1446896639" class="store grow"><img
+                            src="images/app-store.png" alt="App Store"></a>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=mall.tv&amp;hl=cs"
+                        class="store grow"><img src="images/google-play.png" alt="Google Play"></a>
+                    <p class="platformy">MALL.TV lze sledovat na všech těchto platformách a zařízeních:</p>
+                    <div class="platformy">
+                        <img src="images/platformy/1.png" alt="Apple TV">
+                        <img src="images/platformy/2.png" alt="PC">
+                        <img src="images/platformy/3.png" alt="Tablet">
+                        <img src="images/platformy/4.png" alt="Mobil">
+                        <img src="images/platformy/5.png" alt="Internet">
+                        <a href="https://www.microsoft.com/cs-cz/p/malltv/9nqg4rfv1jp3?cid=msft_web_chart"
+                            target="_blank"><img src="images/platformy/6.png" alt="XBOX"></a>
+                        <img src="images/platformy/7.png" alt="Smart TV">
+                    </div>
+                </div>
+            </div>
+            <div class="mtvapp2">
+                <div class="mobil"><img src="images/aplikace2.png" width="300" alt="mobilní aplikace"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer" class="section">
+        <div class="container">
+            © 2020 Internet Mall, a. s.
+        </div>
+    </div>
+
+    <script>
+        function handleVideoOverlay() {
+            var videoOverlay = document.querySelector('#video-overlay');
+            var openVideoOverlayBtns = document.querySelectorAll('.open-video-overlay');
+
+            function openVideoOverlay(e) {
+                var iframe = videoOverlay.querySelector('iframe');
+                iframe.src = e.target.dataset.videoSrc;
+                var title = videoOverlay.querySelector('.video-overlay--title');
+                title.innerHTML = e.target.dataset.overlayTitle;
+                videoOverlay.style = "display: block;"
+            }
+
+            function closeVideoOverlay(e) {
+                var iframe = videoOverlay.querySelector('iframe');
+                iframe.src = '';
+                var title = videoOverlay.querySelector('.video-overlay--title');
+                title.innerHTML = '';
+                videoOverlay.style = "display: none;"
+            }
+
+            openVideoOverlayBtns.forEach(item => {
+                item.addEventListener('click', openVideoOverlay);
+            });
+
+            videoOverlay.addEventListener('click', closeVideoOverlay);
+        }
+        handleVideoOverlay();
+
+        function showAllPlacements() {
+            var placements = document.querySelectorAll('#placement-of-movies .pom-wrap');
+            var showAllPlacementsBtn = document.querySelector('.show-all-placements');
+            showAllPlacementsBtn.addEventListener('click', () => {
+                showAllPlacementsBtn.style = "display: none;";
+                placements.forEach(item => {
+                    item.style = "display: block;";
+                });
+            });
+        }
+        showAllPlacements();
+    </script>
+    <script type="text/javascript" src="carousel.js"></script>
+    <script>
+        launchCarousel('#schedule-carousel');
+    </script>
+</body>
+
+</html>
