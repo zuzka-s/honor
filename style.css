@@ -1,4 +1,4 @@
-/* Tady Vary */
+/* Honor */
 html {
     scroll-behavior: smooth;
 }
@@ -533,9 +533,9 @@ div.platformy img {
     font-weight: bold;
 }
 /* Embed */
-.em-cont{/*max-width:800px;max-height:470px;*/height:100%;width:100%;overflow:hidden;margin:0 auto; margin-bottom: 20px;}.embed{position:relative;overflow:hidden;padding-top:46.25%;}.embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
+.em-cont{max-width:800px;height:100%;width:100%;overflow:hidden;margin:0 auto; margin-bottom: 20px;}.embed{position:relative;overflow:hidden;padding-top:56.25%;}.embed iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;overflow:hidden}
 @media screen and (max-width: 555px) {
-    .embed{position:relative;overflow:hidden;padding-top: 159.25%;}
+    .embed{position:relative;overflow:hidden;padding-top: 56.25%;}
     .em-cont{max-height:none;}
 }
 
@@ -1147,4 +1147,45 @@ background: linear-gradient(135deg, rgba(255,0,208,1) 0%, rgba(40,146,255,1) 33%
 }
 #win-section {
     padding-top: 45px;
+}
+.price-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+.price-banner-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.price-banner-info, .price-banner-product {
+    min-width: 320px;
+}
+.price-banner .price-banner-btn {
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 200px;
+    margin: 50px 0;
+}
+.price-banner:hover .price-banner-btn {
+    text-decoration: underline;
+}    
+
+@media screen and (max-width: 450px) {
+    #header {
+        padding: 30px 0;
+    }
+    .page-title-txt {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;        
+    }
+    .section {
+        padding: 10px 0;
+    }
 }
