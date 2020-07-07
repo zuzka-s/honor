@@ -13,11 +13,22 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 ,
+.page-title-txt {
     font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
 }
-
+.page-title-txt {
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+#header {
+    padding: 60px 0;
+}
+h1 {
+    display: none;
+}
 h2 {
     font-size: 2.5rem;
 }
@@ -29,7 +40,8 @@ h2 {
     padding: 25px 0;
 }
 #head-stripe {
-    background: #F8F8F8;
+    background: black;
+    color: white;
     padding: 15px 0;
     font-family: 'News Cycle', sans-serif;
     text-transform: uppercase;
@@ -54,9 +66,6 @@ h2 {
 }
 #header .container {
     text-align: center;
-}
-#header .container h1 {
-    display: none;
 }
 img.logo {
     max-height: 300px;
@@ -1130,3 +1139,12 @@ div#other-short-movies, div#other-movies {
 span.red {
     color: #FF0000;
 } */
+
+.section.dark {
+    color: white;
+background: rgb(255,0,208);
+background: linear-gradient(135deg, rgba(255,0,208,1) 0%, rgba(40,146,255,1) 33%, rgba(19,203,255,1) 87%, rgba(0,255,255,1) 100%);
+}
+#win-section {
+    padding-top: 45px;
+}
