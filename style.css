@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Vesper Libre', serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
 }
 
@@ -14,7 +14,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'News Cycle', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     text-transform: uppercase;
 }
 
